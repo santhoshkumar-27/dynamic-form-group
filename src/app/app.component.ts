@@ -18,10 +18,10 @@ export class AppComponent {
     // console.log('this is called')
     this.personForm = this.fb.group({
       name: new FormControl(''),
-      deliveryAddress: this.fb.group({
-        address: new FormControl(''),
-        pincode: new FormControl('')
-      })
+      // deliveryAddress: this.fb.group({
+      //   address: new FormControl(''),
+      //   pincode: new FormControl('')
+      // })
     })
   }
 

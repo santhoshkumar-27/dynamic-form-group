@@ -1,8 +1,7 @@
 <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
     <input formControlName="name" placeholder="name" />
-    <ng-container formGroupName="deliveryAddress">
-        <input formControlName="address" placeholder="address" />
-        <input formControlName="pincode" placeholder="pincode" />
-    </ng-container>
+    <app-address groupName="deliveryAddress"></app-address>
+    <app-address groupName="homeAddress"></app-address>
+    <app-address groupName="bilingAddress"></app-address>
     <button type="submit">submit</button>
 </form>
